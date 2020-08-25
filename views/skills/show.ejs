@@ -1,0 +1,18 @@
+<%- include('../partials/header') -%>
+
+<div class="jumbotron">
+    <h1 class="display-4"><%= skill.name %></h1>
+    <p class="lead">Your level with <%=skill.name%> is <%= skill.level %>.</p>
+    <hr class="my-4">
+    <p>You have <%=(skill.validatedAssessment) ? 'passed' : 'failed' %> the assessment.</p>
+    <a class="btn btn-primary" href="/skills" role="button">Home Page</a>
+    <a class="btn btn-warning" href="/skills/<%= skill.id %>/edit" role="button">Edit Skill</a>
+    <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST" class="buttons">
+      <button class="btn btn-danger" type="submit">Delete Skill</button>
+    </form>
+
+  </div>
+
+<%- include('../partials/footer') -%>
+
+

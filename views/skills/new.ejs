@@ -1,0 +1,11 @@
+<%- include('../partials/header') -%>
+<h1>Add A New Skill</h1>
+<form action="/skills" method="POST">
+    <input type="text" name="skillName" placeholder="Skill Name" autocomplete="off" autocapitalize="on"> <br>
+    <input type="text" name="skillLevel" placeholder="Skill Level (e.g:'Expert')"  autocomplete="off" autocapitalize="on"> <br>
+    <input type="checkbox" name='passedAssessment'>
+    <span>Check the box if the assessment has been passed</span> <br>
+    <button class="btn btn-success" type="submit">Add</button>
+</form>
+
+<%- include('../partials/footer') -%>

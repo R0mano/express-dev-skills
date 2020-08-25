@@ -1,0 +1,14 @@
+<%- include('../partials/header') -%>
+
+<h1>My Developer Skills</h1>
+<ul class="list-group">
+  <% skills.forEach(function(skill) { %>
+  <li class="list-group-item list-group-item-action">
+      <a href="/skills/<%=skill.id%>"><%= skill.name %></a>
+  </li>
+  <% }); %>
+</ul>
+<br>
+<a href="/skills/new">Add New Skill</a>
+
+<%- include('../partials/footer') -%>

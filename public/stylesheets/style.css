@@ -1,0 +1,33 @@
+body {
+  padding-top: 10%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 35%;
+  margin: 0 auto;
+  background-color: #ebecf1;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  margin-bottom: 5vh;
+  color: #2d4059;
+}
+
+li {
+  background-color: #ebecf1;
+}
+
+input {
+  margin: 2vh 0;
+}
+
+/* button {
+  margin: 2vh 0;
+  display: inline-block;
+} */
+
+.buttons {
+  display: inline-block;
+}

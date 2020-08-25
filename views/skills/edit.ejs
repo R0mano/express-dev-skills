@@ -1,0 +1,18 @@
+<%- include('../partials/header') -%>
+
+<h1>Edit Skill</h1>
+
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+    <label for="name">Skill:</label>
+    <input type="text" value="<%= skill.name %>" name="name"> <br>
+    <label for="level">Level:</label>
+    <input type="text" value="<%= skill.level %>" name="level"> <br>
+    <input type="checkbox" name="assessment" value="<%= skill.validatedAssessment ? 'checked' : '' %>">
+    <span>Check the box if you have passed the assessment.</span> <br>
+    <form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+        <button class="btn btn-success" type="submit">Confirm</button>
+    </form>
+    
+</form>
+
+<%- include('../partials/footer') -%>
